@@ -10,8 +10,8 @@ from textSummarizer.pipeline.prediction import PredictionPipeline
 
 text:str = "What is Text Summarization?"
 
-app = FastAPI()
-
+application = FastAPI()
+app = application
 @app.get("/", tags=["authentication"])
 async def index():
     return RedirectResponse(url="/docs")
